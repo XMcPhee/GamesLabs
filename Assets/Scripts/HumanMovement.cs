@@ -8,6 +8,7 @@ public class HumanMovement : MonoBehaviour
     public float jumpForce = 5f;
     public bool isGrounded = false;
     public float lastDirection = 1f;
+    public int gemCount = 0;
     private Rigidbody2D rigidBody;
     private Transform playerTransform;
     private SpriteRenderer spriteRenderer;
@@ -36,7 +37,8 @@ public class HumanMovement : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision) {
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
         if (collision.gameObject.CompareTag("Ground"))
         {
             isGrounded = true;
