@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &678824527377901949
+--- !u!1 &4601527667129000132
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,24 +8,25 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2875811800110146756}
-  - component: {fileID: 2780066868690942200}
-  - component: {fileID: 1176368914003594369}
-  - component: {fileID: 7722456820656404533}
+  - component: {fileID: 8516596817701763579}
+  - component: {fileID: 3361614487926182528}
+  - component: {fileID: 1069595350620986701}
+  - component: {fileID: 8630700508889990536}
+  - component: {fileID: 1907030621582836233}
   m_Layer: 7
-  m_Name: Gem
+  m_Name: Gem 1
   m_TagString: Gem
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2875811800110146756
+--- !u!4 &8516596817701763579
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 678824527377901949}
+  m_GameObject: {fileID: 4601527667129000132}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.6, y: -0.65, z: 0.0086}
@@ -34,13 +35,13 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &2780066868690942200
+--- !u!212 &3361614487926182528
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 678824527377901949}
+  m_GameObject: {fileID: 4601527667129000132}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -89,14 +90,14 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &1176368914003594369
+--- !u!95 &1069595350620986701
 Animator:
   serializedVersion: 7
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 678824527377901949}
+  m_GameObject: {fileID: 4601527667129000132}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 265dde05c412e9b41837b585c651becd, type: 2}
@@ -111,13 +112,13 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!61 &7722456820656404533
+--- !u!61 &8630700508889990536
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 678824527377901949}
+  m_GameObject: {fileID: 4601527667129000132}
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
@@ -157,3 +158,17 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.72, y: 1.2}
   m_EdgeRadius: 0
+--- !u!114 &1907030621582836233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4601527667129000132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 612aefbe4d14f43358b10e5676cec4f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gemUI: {fileID: 0}
+  player: {fileID: 0}
