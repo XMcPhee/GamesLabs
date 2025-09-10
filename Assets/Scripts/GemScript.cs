@@ -9,7 +9,9 @@ public class GemScript : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            this.gameObject.SetActive(false);
+            gameObject.SetActive(false);
+            var hp = other.GetComponentInChildren<Health>();
+            hp.ApplyDamage(new DamageInfo(5, gameObject));
             player.gemCount += 1;
             gemUI.text = "Gem Count: " + player.gemCount.ToString();
         }
